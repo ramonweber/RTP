@@ -30,7 +30,7 @@ void ofApp::draw(){
 	float scale = ofMap(mouseX, 0, ofGetWidth(), 0.001, 1);
 	for (int i = 0; i < 160; i++) {
 		for (int j = 0; j < 160; j++) {
-			ofSetColor(ofNoise(i*0.03,j*0.03, mouseX * 0.01)*255);
+			ofSetColor(ofNoise(i*0.02,j*0.02, mouseX * 0.01)*255);
 			ofDrawRectangle(i*10, j*10, 10, 10);
 		}
 	}
