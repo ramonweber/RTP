@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	ofBackground(255, 255, 255);
+	
 }
 
 //--------------------------------------------------------------
@@ -12,10 +12,10 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+	// Based on Artwork by Vera Molnar, Certains se chevauchant 1987
+	// WEB URL http://www.veramolnar.com/diapo.php?y=1987
 
-	// white background
-	//ofBackground(255, 255, 255);
-	
+	ofBackground(255, 255, 255);
 	ofSetColor(170,146,49,200);
 	ofSetRectMode(OF_RECTMODE_CENTER);
 	ofEnableAlphaBlending();
@@ -33,21 +33,7 @@ void ofApp::draw(){
 		// Bottom Rectangles
 		ofDrawRectangle(x, 800, 20, -(700 + ofRandom(0, 200)));
 	}
-	//ofSeedRandom(mouseX);
-	//for (int i = 0; i < 800; i++) {
-	//	ofDrawCircle(i, 400 + ofRandom(-100,100), 2);
-	//}
 
-	/*for (int i = 0; i < 800; i++) {
-		ofDrawCircle(i, 400 + ofSignedNoise(i*0.01, mouseX*0.1)*100, 2);
-	}
-	float scale = ofMap(mouseX, 0, ofGetWidth(), 0.001, 1);
-	for (int i = 0; i < 160; i++) {
-		for (int j = 0; j < 160; j++) {
-			ofSetColor(ofNoise(i*0.02, j*0.02, mouseX * 0.01) * 255);
-			ofDrawRectangle(i * 10, j * 10, 10, 10);
-		}
-	}*/
 }
 
 //--------------------------------------------------------------
