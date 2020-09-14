@@ -2,7 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	
+	ofSetBackgroundAuto(false);
+	ofBackground(0, 0, 0);
+	ofEnableAlphaBlending();
+	ofSetFrameRate(150);
 }
 
 //--------------------------------------------------------------
@@ -15,8 +18,11 @@ void ofApp::draw(){
 	// Based on Artwork by Vera Molnar, Certains se chevauchant 1987
 	// WEB URL http://www.veramolnar.com/diapo.php?y=1987
 
+	//ofSetBackgroundAuto(false);
+	ofSetColor(0, 0, 0, 20);
+
 	ofBackground(255, 255, 255);
-	ofSetColor(170,146,49,200);
+	ofSetColor(170,146,49,10);
 	ofSetRectMode(OF_RECTMODE_CENTER);
 	ofEnableAlphaBlending();
 
