@@ -1,5 +1,5 @@
 #pragma once
-
+#include "ofxGui.h"
 #include "ofMain.h"
 
 class ofApp : public ofBaseApp{
@@ -20,7 +20,12 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+
+		ofxFloatSlider var_i_gui;
+		ofxFloatSlider var_j_gui;
+		ofxPanel gui;
+
 		ofPolyline trail;
 		float time = 0;
+		float var_i = 1.0;
 };
