@@ -31,14 +31,14 @@ void ofApp::draw(){
 
 	for (int i = 0; i < resolution; i++) {
 
-		
+		int Randres = ofRandom(50, 150);
 		int randomNumber = ofRandom(0, 4);
 		int offset = i % 4;
 		if (offset > randomNumber) {
 			offset = 12 - offset;
 		}
 
-		for (int j = 0; j < resolution/2; j++) {
+		for (int j = 0; j < Randres; j++) {
 			int widthOfWhite = 4;
 			int widthOfRed = 2; 
 			if ((j + offset) % widthOfWhite < widthOfRed) { 
@@ -58,7 +58,7 @@ void ofApp::draw(){
 			offset2 = 12 - offset2;
 		}
 
-		for (int j = (resolution/2); j < resolution; j++) {
+		for (int j = (Randres); j < resolution; j++) {
 			int widthOfWhite = 4;
 			int widthOfRed = 2;
 			if ((j + offset2) % widthOfWhite < widthOfRed) {
